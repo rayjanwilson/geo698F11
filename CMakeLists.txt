@@ -11,5 +11,5 @@ include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
-add_executable (pcd2txt pcd2txt.cpp)
+add_executable (pcd2txt src/pcd2txt.cpp)
 target_link_libraries (pcd2txt ${PCL_LIBRARIES})
