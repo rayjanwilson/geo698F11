@@ -47,7 +47,7 @@ main (int argc, char** argv)
   std::cerr << *cloud_filtered 
             << std::endl;
 
-
+  std::cout << cloud->size() - cloud_filtered->size() << std::endl;
   // Save output files
   std::cout << "Saving the inliers... ";
   
