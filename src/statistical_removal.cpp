@@ -45,9 +45,14 @@ main (int argc, char** argv)
   std::cerr << "Cloud after filtering: " 
             << std::endl;
   std::cerr << *cloud_filtered 
+            << std::endl
             << std::endl;
 
-  std::cout << cloud->size() - cloud_filtered->size() << std::endl;
+  std::cout << cloud->size() - cloud_filtered->size() 
+            << "Points were filtered out" 
+            << std::endl
+            << std::endl;
+
   // Save output files
   std::cout << "Saving the inliers... ";
   
